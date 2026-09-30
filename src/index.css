@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-sans-clean {
+  font-family: var(--font-sans);
+}
+
+.font-mono-nums {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars for arcane tomes */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Subtle magical animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}

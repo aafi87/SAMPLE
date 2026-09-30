@@ -1,0 +1,6 @@
+{
+  "name": "Aetheria · Gamified AI Study Planner",
+  "description": "An advanced, whimsical RPG study planner turning syllabi into epic questlines, boss battle quizzes, spaced repetition alchemy, and companion focus.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
